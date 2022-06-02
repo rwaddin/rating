@@ -1,0 +1,104 @@
+// $colorSadTear : #F51120;
+// $colorSad : #FC860B;
+// $colorMeh : #FFE516;
+// $colorSmile : #77D630;
+// $colorLaugh : #34B747;
+div.rating{
+    
+    label{
+        font-size: 6vw;
+        cursor: pointer;
+        padding: 0 0.5rem;
+        color: grey;
+    
+        input[type=radio]:checked {
+            ~ img.emot-fill{
+                display: inline;
+            }
+            ~ img.emot-line {
+                display: none;
+            }
+        
+        }
+
+        input[type=radio] {
+            display: none
+        }
+        &:hover{
+            img.emot-fill{
+                display: initial;
+                animation: wiggle 2s linear infinite;
+            }
+            img.emot-line{
+                display: none;
+            }
+        }
+    }
+    img.emot-fill{
+        display: none;
+    }
+    // .sad-tear{
+    //     &:hover{
+    //         color: $colorSadTear;
+    //     }
+    //     input[type="radio"]:checked + i {
+    //         color: $colorSadTear;
+    //     }
+    // }
+    // .sad{
+    //     &:hover{
+    //         color: $colorSad;
+    //     }
+    //     input[type="radio"]:checked + i {
+    //         color: $colorSad;
+    //     }
+    // }
+    // .meh{
+    //     &:hover{
+    //         color: $colorMeh;
+    //     }
+    //     input[type="radio"]:checked + i {
+    //         color: $colorMeh;
+    //     }
+    // }
+    // .smile{
+    //     &:hover{
+    //         color: $colorSmile;
+    //     }
+    //     input[type="radio"]:checked + i {
+    //         color: $colorSmile;
+    //     }
+    // }
+    // .laugh{
+    //     &:hover{
+    //         color: $colorLaugh;
+    //     }
+    //     input[type="radio"]:checked + i {
+    //         color: $colorLaugh;
+    //     }
+    // }
+}
+
+@keyframes wiggle {
+    0%, 7% {
+      transform: rotateZ(0);
+    }
+    15% {
+      transform: rotateZ(-15deg);
+    }
+    20% {
+      transform: rotateZ(10deg);
+    }
+    25% {
+      transform: rotateZ(-10deg);
+    }
+    30% {
+      transform: rotateZ(6deg);
+    }
+    35% {
+      transform: rotateZ(-4deg);
+    }
+    40%, 100% {
+      transform: rotateZ(0);
+    }
+  }
