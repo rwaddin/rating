@@ -1,10 +1,4 @@
-// $colorSadTear : #F51120;
-// $colorSad : #FC860B;
-// $colorMeh : #FFE516;
-// $colorSmile : #77D630;
-// $colorLaugh : #34B747;
 div.rating{
-    
     label{
         font-size: 6vw;
         cursor: pointer;
@@ -37,46 +31,6 @@ div.rating{
     img.emot-fill{
         display: none;
     }
-    // .sad-tear{
-    //     &:hover{
-    //         color: $colorSadTear;
-    //     }
-    //     input[type="radio"]:checked + i {
-    //         color: $colorSadTear;
-    //     }
-    // }
-    // .sad{
-    //     &:hover{
-    //         color: $colorSad;
-    //     }
-    //     input[type="radio"]:checked + i {
-    //         color: $colorSad;
-    //     }
-    // }
-    // .meh{
-    //     &:hover{
-    //         color: $colorMeh;
-    //     }
-    //     input[type="radio"]:checked + i {
-    //         color: $colorMeh;
-    //     }
-    // }
-    // .smile{
-    //     &:hover{
-    //         color: $colorSmile;
-    //     }
-    //     input[type="radio"]:checked + i {
-    //         color: $colorSmile;
-    //     }
-    // }
-    // .laugh{
-    //     &:hover{
-    //         color: $colorLaugh;
-    //     }
-    //     input[type="radio"]:checked + i {
-    //         color: $colorLaugh;
-    //     }
-    // }
 }
 
 @keyframes wiggle {
